@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		385FA5981D9EFF6600093C37 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA5971D9EFF6600093C37 /* mainViewController.swift */; };
+		385FA59A1D9F005700093C37 /* homeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA5991D9F005700093C37 /* homeTableViewController.swift */; };
+		385FA59C1D9F006500093C37 /* messageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA59B1D9F006500093C37 /* messageTableViewController.swift */; };
+		385FA59E1D9F007000093C37 /* discoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA59D1D9F007000093C37 /* discoverTableViewController.swift */; };
+		385FA5A01D9F007800093C37 /* profileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA59F1D9F007800093C37 /* profileTableViewController.swift */; };
 		387243D11D9E306D00905184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387243D01D9E306D00905184 /* AppDelegate.swift */; };
-		387243D31D9E306D00905184 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387243D21D9E306D00905184 /* ViewController.swift */; };
 		387243D61D9E306D00905184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387243D41D9E306D00905184 /* Main.storyboard */; };
 		387243D81D9E306D00905184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387243D71D9E306D00905184 /* Assets.xcassets */; };
 		387243DB1D9E306D00905184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387243D91D9E306D00905184 /* LaunchScreen.storyboard */; };
@@ -34,9 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		385FA5971D9EFF6600093C37 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		385FA5991D9F005700093C37 /* homeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeTableViewController.swift; sourceTree = "<group>"; };
+		385FA59B1D9F006500093C37 /* messageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageTableViewController.swift; sourceTree = "<group>"; };
+		385FA59D1D9F007000093C37 /* discoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = discoverTableViewController.swift; sourceTree = "<group>"; };
+		385FA59F1D9F007800093C37 /* profileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileTableViewController.swift; sourceTree = "<group>"; };
 		387243CD1D9E306D00905184 /* weiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		387243D01D9E306D00905184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		387243D21D9E306D00905184 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		387243D51D9E306D00905184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		387243D71D9E306D00905184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		387243DA1D9E306D00905184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +105,8 @@
 		387243CF1D9E306D00905184 /* weiBo */ = {
 			isa = PBXGroup;
 			children = (
+				3891D8511D9E41B000159569 /* classes */,
 				387243D01D9E306D00905184 /* AppDelegate.swift */,
-				387243D21D9E306D00905184 /* ViewController.swift */,
 				387243D41D9E306D00905184 /* Main.storyboard */,
 				387243D71D9E306D00905184 /* Assets.xcassets */,
 				387243D91D9E306D00905184 /* LaunchScreen.storyboard */,
@@ -123,6 +131,58 @@
 				387243F21D9E306D00905184 /* Info.plist */,
 			);
 			path = weiBoUITests;
+			sourceTree = "<group>";
+		};
+		3891D8511D9E41B000159569 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				3891D8541D9E41B000159569 /* Main */,
+				3891D8531D9E41B000159569 /* Home */,
+				3891D8551D9E41B000159569 /* Message */,
+				3891D8521D9E41B000159569 /* Discover */,
+				3891D8561D9E41B000159569 /* Profile */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		3891D8521D9E41B000159569 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				385FA59D1D9F007000093C37 /* discoverTableViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		3891D8531D9E41B000159569 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				385FA5991D9F005700093C37 /* homeTableViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3891D8541D9E41B000159569 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				385FA5971D9EFF6600093C37 /* mainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3891D8551D9E41B000159569 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				385FA59B1D9F006500093C37 /* messageTableViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		3891D8561D9E41B000159569 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				385FA59F1D9F007800093C37 /* profileTableViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387243D31D9E306D00905184 /* ViewController.swift in Sources */,
+				385FA5A01D9F007800093C37 /* profileTableViewController.swift in Sources */,
 				387243D11D9E306D00905184 /* AppDelegate.swift in Sources */,
+				385FA5981D9EFF6600093C37 /* mainViewController.swift in Sources */,
+				385FA59C1D9F006500093C37 /* messageTableViewController.swift in Sources */,
+				385FA59E1D9F007000093C37 /* discoverTableViewController.swift in Sources */,
+				385FA59A1D9F005700093C37 /* homeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
