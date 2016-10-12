@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380187A71DADD00500A1F8B4 /* null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380187A61DADD00500A1F8B4 /* null.storyboard */; };
+		384B9B1E1DA5E6F1001A246D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B9B1C1DA5E6F1001A246D /* Home.storyboard */; };
+		384B9B201DA5E719001A246D /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B9B1F1DA5E719001A246D /* Message.storyboard */; };
+		384B9B251DA5E762001A246D /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B9B241DA5E762001A246D /* Discover.storyboard */; };
+		384B9B281DA5E779001A246D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B9B261DA5E779001A246D /* Profile.storyboard */; };
 		385FA5981D9EFF6600093C37 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA5971D9EFF6600093C37 /* mainViewController.swift */; };
 		385FA59A1D9F005700093C37 /* homeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA5991D9F005700093C37 /* homeTableViewController.swift */; };
 		385FA59C1D9F006500093C37 /* messageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA59B1D9F006500093C37 /* messageTableViewController.swift */; };
@@ -38,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		380187A61DADD00500A1F8B4 /* null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = null.storyboard; path = ../../null.storyboard; sourceTree = "<group>"; };
+		384B9B1D1DA5E6F1001A246D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		384B9B1F1DA5E719001A246D /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../../Message.storyboard; sourceTree = "<group>"; };
+		384B9B241DA5E762001A246D /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = ../../Discover.storyboard; sourceTree = "<group>"; };
+		384B9B271DA5E779001A246D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		385FA5971D9EFF6600093C37 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		385FA5991D9F005700093C37 /* homeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeTableViewController.swift; sourceTree = "<group>"; };
 		385FA59B1D9F006500093C37 /* messageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageTableViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +158,7 @@
 		3891D8521D9E41B000159569 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				384B9B241DA5E762001A246D /* Discover.storyboard */,
 				385FA59D1D9F007000093C37 /* discoverTableViewController.swift */,
 			);
 			path = Discover;
@@ -156,6 +167,7 @@
 		3891D8531D9E41B000159569 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				384B9B1C1DA5E6F1001A246D /* Home.storyboard */,
 				385FA5991D9F005700093C37 /* homeTableViewController.swift */,
 			);
 			path = Home;
@@ -164,6 +176,7 @@
 		3891D8541D9E41B000159569 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				380187A61DADD00500A1F8B4 /* null.storyboard */,
 				385FA5971D9EFF6600093C37 /* mainViewController.swift */,
 			);
 			path = Main;
@@ -172,6 +185,7 @@
 		3891D8551D9E41B000159569 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				384B9B1F1DA5E719001A246D /* Message.storyboard */,
 				385FA59B1D9F006500093C37 /* messageTableViewController.swift */,
 			);
 			path = Message;
@@ -180,6 +194,7 @@
 		3891D8561D9E41B000159569 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				384B9B261DA5E779001A246D /* Profile.storyboard */,
 				385FA59F1D9F007800093C37 /* profileTableViewController.swift */,
 			);
 			path = Profile;
@@ -296,8 +311,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				387243DB1D9E306D00905184 /* LaunchScreen.storyboard in Resources */,
+				380187A71DADD00500A1F8B4 /* null.storyboard in Resources */,
 				387243D81D9E306D00905184 /* Assets.xcassets in Resources */,
+				384B9B281DA5E779001A246D /* Profile.storyboard in Resources */,
+				384B9B201DA5E719001A246D /* Message.storyboard in Resources */,
 				387243D61D9E306D00905184 /* Main.storyboard in Resources */,
+				384B9B1E1DA5E6F1001A246D /* Home.storyboard in Resources */,
+				384B9B251DA5E762001A246D /* Discover.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +383,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		384B9B1C1DA5E6F1001A246D /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				384B9B1D1DA5E6F1001A246D /* Base */,
+			);
+			name = Home.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		384B9B261DA5E779001A246D /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				384B9B271DA5E779001A246D /* Base */,
+			);
+			name = Profile.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		387243D41D9E306D00905184 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -21,12 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // globle color 
         
         UITabBar.appearance().tintColor = UIColor.orange
+//
+//        
+//        
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.rootViewController = mainViewController()
+//        window?.makeKeyAndVisible()
+
         
+
         
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = mainViewController()
-        window?.makeKeyAndVisible()
         
         return true
     }
