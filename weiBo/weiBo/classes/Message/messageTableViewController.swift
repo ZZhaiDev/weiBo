@@ -8,7 +8,7 @@
 
 import UIKit
 
-class messageTableViewController: UITableViewController {
+class messageTableViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

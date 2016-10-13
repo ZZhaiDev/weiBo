@@ -15,15 +15,27 @@ class mainViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         
-        tabBar.addSubview(composeBtn)
-         composeBtn.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.size.height * 0.5)
-
+        setUpComposeBtn()
     }
 
-    
-    
+}
 
+extension mainViewController{
+    fileprivate func setUpComposeBtn(){
+        
+        tabBar.addSubview(composeBtn)
+        composeBtn.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.size.height * 0.5)
+        composeBtn.addTarget(self, action: "composeBtnClick", for: .touchUpInside)
+    }
+}
+
+extension mainViewController{
+    @objc fileprivate func composeBtnClick(){
+        
+        print("adfasdfa")
+    }
 }
 
 

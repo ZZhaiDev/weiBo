@@ -13,6 +13,7 @@
 		384B9B251DA5E762001A246D /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B9B241DA5E762001A246D /* Discover.storyboard */; };
 		384B9B281DA5E779001A246D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B9B261DA5E779001A246D /* Profile.storyboard */; };
 		3853FAFA1DAF1402004867AE /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853FAF91DAF1402004867AE /* UIButton-Extension.swift */; };
+		3853FAFD1DAF46C5004867AE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853FAFC1DAF46C5004867AE /* BaseViewController.swift */; };
 		385FA5981D9EFF6600093C37 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA5971D9EFF6600093C37 /* mainViewController.swift */; };
 		385FA59A1D9F005700093C37 /* homeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA5991D9F005700093C37 /* homeTableViewController.swift */; };
 		385FA59C1D9F006500093C37 /* messageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA59B1D9F006500093C37 /* messageTableViewController.swift */; };
@@ -24,6 +25,8 @@
 		387243DB1D9E306D00905184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387243D91D9E306D00905184 /* LaunchScreen.storyboard */; };
 		387243E61D9E306D00905184 /* weiBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387243E51D9E306D00905184 /* weiBoTests.swift */; };
 		387243F11D9E306D00905184 /* weiBoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387243F01D9E306D00905184 /* weiBoUITests.swift */; };
+		38FE64DE1DB02D3E009226C5 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE64DD1DB02D3E009226C5 /* VisitorView.swift */; };
+		38FE64E01DB02D53009226C5 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38FE64DF1DB02D53009226C5 /* VisitorView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,7 @@
 		384B9B241DA5E762001A246D /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = ../../Discover.storyboard; sourceTree = "<group>"; };
 		384B9B271DA5E779001A246D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		3853FAF91DAF1402004867AE /* UIButton-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
+		3853FAFC1DAF46C5004867AE /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		385FA5971D9EFF6600093C37 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		385FA5991D9F005700093C37 /* homeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeTableViewController.swift; sourceTree = "<group>"; };
 		385FA59B1D9F006500093C37 /* messageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageTableViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 		387243EC1D9E306D00905184 /* weiBoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiBoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		387243F01D9E306D00905184 /* weiBoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weiBoUITests.swift; sourceTree = "<group>"; };
 		387243F21D9E306D00905184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38FE64DD1DB02D3E009226C5 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		38FE64DF1DB02D53009226C5 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,17 @@
 				3853FAF91DAF1402004867AE /* UIButton-Extension.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		3853FAFB1DAF452F004867AE /* visitor */ = {
+			isa = PBXGroup;
+			children = (
+				3853FAFC1DAF46C5004867AE /* BaseViewController.swift */,
+				38FE64DD1DB02D3E009226C5 /* VisitorView.swift */,
+				38FE64DF1DB02D53009226C5 /* VisitorView.xib */,
+			);
+			name = visitor;
+			path = base;
 			sourceTree = "<group>";
 		};
 		387243C41D9E306C00905184 = {
@@ -195,6 +212,7 @@
 		3891D8541D9E41B000159569 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3853FAFB1DAF452F004867AE /* visitor */,
 				380187A61DADD00500A1F8B4 /* null.storyboard */,
 				385FA5971D9EFF6600093C37 /* mainViewController.swift */,
 			);
@@ -334,6 +352,7 @@
 				387243D81D9E306D00905184 /* Assets.xcassets in Resources */,
 				384B9B281DA5E779001A246D /* Profile.storyboard in Resources */,
 				384B9B201DA5E719001A246D /* Message.storyboard in Resources */,
+				38FE64E01DB02D53009226C5 /* VisitorView.xib in Resources */,
 				387243D61D9E306D00905184 /* Main.storyboard in Resources */,
 				384B9B1E1DA5E6F1001A246D /* Home.storyboard in Resources */,
 				384B9B251DA5E762001A246D /* Discover.storyboard in Resources */,
@@ -365,7 +384,9 @@
 				3853FAFA1DAF1402004867AE /* UIButton-Extension.swift in Sources */,
 				387243D11D9E306D00905184 /* AppDelegate.swift in Sources */,
 				385FA5981D9EFF6600093C37 /* mainViewController.swift in Sources */,
+				38FE64DE1DB02D3E009226C5 /* VisitorView.swift in Sources */,
 				385FA59C1D9F006500093C37 /* messageTableViewController.swift in Sources */,
+				3853FAFD1DAF46C5004867AE /* BaseViewController.swift in Sources */,
 				385FA59E1D9F007000093C37 /* discoverTableViewController.swift in Sources */,
 				385FA59A1D9F005700093C37 /* homeTableViewController.swift in Sources */,
 			);

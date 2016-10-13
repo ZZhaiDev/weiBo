@@ -8,7 +8,7 @@
         <!--Discover-->
         <scene sceneID="joy-gZ-fDR">
             <objects>
-                <tableViewController id="0nH-xV-Al3" sceneMemberID="viewController">
+                <tableViewController id="0nH-xV-Al3" customClass="discoverTableViewController" customModule="weiBo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UG7-bM-W1Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
