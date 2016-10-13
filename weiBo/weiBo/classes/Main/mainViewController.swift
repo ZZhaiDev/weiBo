@@ -10,38 +10,26 @@ import UIKit
 
 class mainViewController: UITabBarController {
 
-    
-    fileprivate lazy var composeBtn : UIButton = UIButton()
+    // UIButton 构造方法
+    fileprivate lazy var composeBtn = UIButton(imageName: "tabbar_compose_icon_add", bgImageName: "tabbar_compose_button")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-     setUpcompseBtn()
-    
-    }
-
-    
-    
-
-}
-
-extension mainViewController{
-    
-    fileprivate func setUpcompseBtn(){
-        
-        
-        // disable the tabBar item in null.storyboard
-        
         tabBar.addSubview(composeBtn)
-        
-        composeBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), for: .normal)
-        composeBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), for: .highlighted)
-        composeBtn.setImage(UIImage(named: "tabbar_compose_icon_add"), for: .normal)
-        composeBtn.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), for: .highlighted)
-        composeBtn.sizeToFit()
-        
-        composeBtn.center = CGPoint(x: tabBar.center.x  , y: tabBar.bounds.size.height * 0.5)
+         composeBtn.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.size.height * 0.5)
+
     }
+
+    
+    
+
 }
+
+
+
+
+
+
+
 
