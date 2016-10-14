@@ -13,7 +13,7 @@ class homeTableViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      
+        visitorView.addRotationAnim()
     }
 
    

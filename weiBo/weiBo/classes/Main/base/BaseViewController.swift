@@ -10,11 +10,25 @@ import UIKit
 
 class BaseViewController: UITableViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    //MARK:- 懒加载属性
+    lazy var visitorView: VisitorView = VisitorView.visitorView()
 
-        view  = VisitorView.visitorView()
-
+    // 定义变量
+    var isLogin : Bool = false
+    
+    override func loadView() {
+        isLogin ? super.loadView() : setUpVisitorView()
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+     
+    }
+ 
+}
+
+extension BaseViewController{
+    fileprivate func setUpVisitorView(){
+        view = visitorView
+    }
 }

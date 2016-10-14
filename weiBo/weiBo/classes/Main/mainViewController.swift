@@ -27,7 +27,7 @@ extension mainViewController{
         
         tabBar.addSubview(composeBtn)
         composeBtn.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.size.height * 0.5)
-        composeBtn.addTarget(self, action: "composeBtnClick", for: .touchUpInside)
+        composeBtn.addTarget(self, action: #selector(mainViewController.composeBtnClick), for: .touchUpInside)
     }
 }
 
