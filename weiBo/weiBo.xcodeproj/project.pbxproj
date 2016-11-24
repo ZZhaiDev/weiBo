@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		380187A71DADD00500A1F8B4 /* null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380187A61DADD00500A1F8B4 /* null.storyboard */; };
+		384966951DE6A8F7004DF1A6 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384966931DE6A8F7004DF1A6 /* PopoverViewController.swift */; };
+		384966961DE6A8F7004DF1A6 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 384966941DE6A8F7004DF1A6 /* PopoverViewController.xib */; };
+		384966981DE6B4C8004DF1A6 /* ZJPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384966971DE6B4C8004DF1A6 /* ZJPresentationController.swift */; };
 		384B45001DE4254C00DDB73B /* UIBarButtonItem-extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B44FF1DE4254C00DDB73B /* UIBarButtonItem-extention.swift */; };
 		384B45021DE4293B00DDB73B /* titleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B45011DE4293B00DDB73B /* titleButton.swift */; };
 		384B9B1E1DA5E6F1001A246D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B9B1C1DA5E6F1001A246D /* Home.storyboard */; };
@@ -50,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		380187A61DADD00500A1F8B4 /* null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = null.storyboard; path = ../../null.storyboard; sourceTree = "<group>"; };
+		384966931DE6A8F7004DF1A6 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		384966941DE6A8F7004DF1A6 /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
+		384966971DE6B4C8004DF1A6 /* ZJPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJPresentationController.swift; sourceTree = "<group>"; };
 		384B44FF1DE4254C00DDB73B /* UIBarButtonItem-extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-extention.swift"; sourceTree = "<group>"; };
 		384B45011DE4293B00DDB73B /* titleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = titleButton.swift; sourceTree = "<group>"; };
 		384B9B1D1DA5E6F1001A246D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -104,6 +110,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		384966921DE6A8A7004DF1A6 /* UIPopover */ = {
+			isa = PBXGroup;
+			children = (
+				384966931DE6A8F7004DF1A6 /* PopoverViewController.swift */,
+				384966941DE6A8F7004DF1A6 /* PopoverViewController.xib */,
+				384966971DE6B4C8004DF1A6 /* ZJPresentationController.swift */,
+			);
+			path = UIPopover;
+			sourceTree = "<group>";
+		};
 		3853FAF71DAF13D6004867AE /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +225,7 @@
 		3891D8531D9E41B000159569 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				384966921DE6A8A7004DF1A6 /* UIPopover */,
 				384B9B1C1DA5E6F1001A246D /* Home.storyboard */,
 				385FA5991D9F005700093C37 /* homeTableViewController.swift */,
 			);
@@ -357,6 +374,7 @@
 				380187A71DADD00500A1F8B4 /* null.storyboard in Resources */,
 				387243D81D9E306D00905184 /* Assets.xcassets in Resources */,
 				384B9B281DA5E779001A246D /* Profile.storyboard in Resources */,
+				384966961DE6A8F7004DF1A6 /* PopoverViewController.xib in Resources */,
 				384B9B201DA5E719001A246D /* Message.storyboard in Resources */,
 				38FE64E01DB02D53009226C5 /* VisitorView.xib in Resources */,
 				387243D61D9E306D00905184 /* Main.storyboard in Resources */,
@@ -387,9 +405,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				385FA5A01D9F007800093C37 /* profileTableViewController.swift in Sources */,
+				384966981DE6B4C8004DF1A6 /* ZJPresentationController.swift in Sources */,
 				3853FAFA1DAF1402004867AE /* UIButton-Extension.swift in Sources */,
 				387243D11D9E306D00905184 /* AppDelegate.swift in Sources */,
 				384B45021DE4293B00DDB73B /* titleButton.swift in Sources */,
+				384966951DE6A8F7004DF1A6 /* PopoverViewController.swift in Sources */,
 				385FA5981D9EFF6600093C37 /* mainViewController.swift in Sources */,
 				38FE64DE1DB02D3E009226C5 /* VisitorView.swift in Sources */,
 				385FA59C1D9F006500093C37 /* messageTableViewController.swift in Sources */,

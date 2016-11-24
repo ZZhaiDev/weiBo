@@ -49,7 +49,37 @@ extension homeTableViewController{
 
 extension homeTableViewController{
     @objc fileprivate func tileBtnClick(titleBtn: titleButton){
+        
+        
         titleBtn.isSelected = !titleBtn.isSelected
+        
+        // create popViewController
+       let popVc = PopoverViewController()
+        
+        // change controller modal style
+        // 只有有了这句话，弹出controller 后边的的东西才不会消失
+        popVc.modalPresentationStyle = .custom
+
+        //set transition delegate
+        popVc.transitioningDelegate = self
+        
+        // present controller
+        present(popVc, animated: true, completion: nil)
+        
+            
+        
         
     }
 }
+
+extension homeTableViewController : UIViewControllerTransitioningDelegate{
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+//        return UIPresentationController(presentedViewController: presented, presenting: presenting)
+        // 要想改变弹出的controller 的frame， 必须自定义UIPresentationController
+        
+        return ZJPresentationController(presentedViewController: presented, presenting: presenting)
+    }
+    
+}
+
+
