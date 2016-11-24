@@ -17,6 +17,8 @@ class VisitorView: UIView {
     }
     
     //MARK:- 空间的属性
+    @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var registerBtn: UIButton!
     @IBOutlet weak var rotationView: UIImageView!
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var tipLabel: UILabel!
@@ -33,6 +35,8 @@ class VisitorView: UIView {
     func addRotationAnim() {
         // 1.创建动画
         let rotationAnim = CABasicAnimation(keyPath: "transform.rotation.z")
+        
+        // MARK:-
         
         // 2.设置动画的属性
         rotationAnim.fromValue = 0

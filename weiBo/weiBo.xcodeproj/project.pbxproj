@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		380187A71DADD00500A1F8B4 /* null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380187A61DADD00500A1F8B4 /* null.storyboard */; };
+		384B45001DE4254C00DDB73B /* UIBarButtonItem-extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B44FF1DE4254C00DDB73B /* UIBarButtonItem-extention.swift */; };
+		384B45021DE4293B00DDB73B /* titleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B45011DE4293B00DDB73B /* titleButton.swift */; };
 		384B9B1E1DA5E6F1001A246D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B9B1C1DA5E6F1001A246D /* Home.storyboard */; };
 		384B9B201DA5E719001A246D /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B9B1F1DA5E719001A246D /* Message.storyboard */; };
 		384B9B251DA5E762001A246D /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B9B241DA5E762001A246D /* Discover.storyboard */; };
@@ -48,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		380187A61DADD00500A1F8B4 /* null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = null.storyboard; path = ../../null.storyboard; sourceTree = "<group>"; };
+		384B44FF1DE4254C00DDB73B /* UIBarButtonItem-extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-extention.swift"; sourceTree = "<group>"; };
+		384B45011DE4293B00DDB73B /* titleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = titleButton.swift; sourceTree = "<group>"; };
 		384B9B1D1DA5E6F1001A246D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		384B9B1F1DA5E719001A246D /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../../Message.storyboard; sourceTree = "<group>"; };
 		384B9B241DA5E762001A246D /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = ../../Discover.storyboard; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				3853FAF81DAF13D6004867AE /* Category */,
+				384B45011DE4293B00DDB73B /* titleButton.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				3853FAF91DAF1402004867AE /* UIButton-Extension.swift */,
+				384B44FF1DE4254C00DDB73B /* UIBarButtonItem-extention.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -383,10 +389,12 @@
 				385FA5A01D9F007800093C37 /* profileTableViewController.swift in Sources */,
 				3853FAFA1DAF1402004867AE /* UIButton-Extension.swift in Sources */,
 				387243D11D9E306D00905184 /* AppDelegate.swift in Sources */,
+				384B45021DE4293B00DDB73B /* titleButton.swift in Sources */,
 				385FA5981D9EFF6600093C37 /* mainViewController.swift in Sources */,
 				38FE64DE1DB02D3E009226C5 /* VisitorView.swift in Sources */,
 				385FA59C1D9F006500093C37 /* messageTableViewController.swift in Sources */,
 				3853FAFD1DAF46C5004867AE /* BaseViewController.swift in Sources */,
+				384B45001DE4254C00DDB73B /* UIBarButtonItem-extention.swift in Sources */,
 				385FA59E1D9F007000093C37 /* discoverTableViewController.swift in Sources */,
 				385FA59A1D9F005700093C37 /* homeTableViewController.swift in Sources */,
 			);

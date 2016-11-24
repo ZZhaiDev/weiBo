@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // globle color 
         
         UITabBar.appearance().tintColor = UIColor.orange
+        UINavigationBar.appearance().tintColor  = UIColor.orange
 //
 //        
 //        

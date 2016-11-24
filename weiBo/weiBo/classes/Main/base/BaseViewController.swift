@@ -14,7 +14,7 @@ class BaseViewController: UITableViewController {
     lazy var visitorView: VisitorView = VisitorView.visitorView()
 
     // 定义变量
-    var isLogin : Bool = false
+    var isLogin : Bool = true
     
     override func loadView() {
         isLogin ? super.loadView() : setUpVisitorView()
@@ -22,6 +22,8 @@ class BaseViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUpNavigationItem()
      
     }
  
@@ -30,5 +32,24 @@ class BaseViewController: UITableViewController {
 extension BaseViewController{
     fileprivate func setUpVisitorView(){
         view = visitorView
+        visitorView.registerBtn.addTarget(self, action: #selector(registerBtnClick), for: .touchUpInside)
+        visitorView.loginBtn.addTarget(self, action: #selector(logInBtnClick), for: .touchUpInside)
+    }
+    
+    
+    // left and right barButtonItem
+    fileprivate func setUpNavigationItem(){
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "register", style: .plain, target: self, action: #selector(BaseViewController.registerBtnClick))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "login", style: .plain, target: self, action: #selector(logInBtnClick))
+    }
+}
+
+extension BaseViewController{
+    @objc fileprivate func registerBtnClick(){
+        print("registerBtnClick")
+    }
+    
+    @objc fileprivate func logInBtnClick(){
+        print("logInBtnClick")
     }
 }

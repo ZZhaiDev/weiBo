@@ -37,19 +37,9 @@
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8N-F7-KOa">
-                    <constraints>
-                        <constraint firstAttribute="height" constant="32" id="0Lg-i1-SUC"/>
-                        <constraint firstAttribute="width" constant="70" id="iaC-iO-Eks"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <state key="normal" title="Register" backgroundImage="common_button_white_disable">
-                        <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRl-BI-hAG">
                     <constraints>
-                        <constraint firstAttribute="width" constant="90" id="5UX-bd-oVG"/>
+                        <constraint firstAttribute="width" constant="70" id="5UX-bd-oVG"/>
                         <constraint firstAttribute="height" constant="32" id="TTB-j8-6pr"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -57,25 +47,37 @@
                         <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YO3-Vq-Fwv">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="fz0-an-lKi"/>
+                        <constraint firstAttribute="height" constant="32" id="pB0-20-4dR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Register" backgroundImage="common_button_white_disable">
+                        <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="W8N-F7-KOa" firstAttribute="leading" secondItem="E7a-Re-yeU" secondAttribute="leading" id="4LX-Qu-Q7c"/>
                 <constraint firstItem="tov-KC-icS" firstAttribute="centerX" secondItem="Ns2-kX-CcM" secondAttribute="centerX" id="5x5-6S-MWb"/>
                 <constraint firstAttribute="trailing" secondItem="0ct-uW-Fmw" secondAttribute="trailing" id="8W9-bh-jAU"/>
                 <constraint firstItem="E7a-Re-yeU" firstAttribute="top" secondItem="0Bn-AO-gFd" secondAttribute="bottom" constant="40" id="BHL-Zv-Hkp"/>
+                <constraint firstItem="kRl-BI-hAG" firstAttribute="leading" secondItem="YO3-Vq-Fwv" secondAttribute="trailing" constant="47" id="FIq-8W-a7L"/>
                 <constraint firstItem="0Bn-AO-gFd" firstAttribute="centerX" secondItem="tov-KC-icS" secondAttribute="centerX" id="K0n-T4-hh0"/>
+                <constraint firstItem="YO3-Vq-Fwv" firstAttribute="top" secondItem="E7a-Re-yeU" secondAttribute="bottom" constant="42" id="Stp-9Q-uM1"/>
                 <constraint firstItem="E7a-Re-yeU" firstAttribute="centerX" secondItem="Ns2-kX-CcM" secondAttribute="centerX" id="b9z-Gd-obz"/>
                 <constraint firstItem="tov-KC-icS" firstAttribute="centerY" secondItem="Ns2-kX-CcM" secondAttribute="centerY" constant="-83" id="cVg-wt-s8K"/>
-                <constraint firstItem="kRl-BI-hAG" firstAttribute="top" secondItem="W8N-F7-KOa" secondAttribute="top" id="gfC-Ux-PfK"/>
-                <constraint firstItem="W8N-F7-KOa" firstAttribute="top" secondItem="0Bn-AO-gFd" secondAttribute="bottom" constant="100" id="jE1-vv-tIt"/>
                 <constraint firstItem="0ct-uW-Fmw" firstAttribute="top" secondItem="Ns2-kX-CcM" secondAttribute="top" id="jQG-ox-f7B"/>
                 <constraint firstItem="kRl-BI-hAG" firstAttribute="trailing" secondItem="E7a-Re-yeU" secondAttribute="trailing" id="n7W-cQ-CNh"/>
+                <constraint firstItem="kRl-BI-hAG" firstAttribute="top" secondItem="E7a-Re-yeU" secondAttribute="bottom" constant="43" id="nnf-O5-TUz"/>
                 <constraint firstItem="0Bn-AO-gFd" firstAttribute="centerY" secondItem="tov-KC-icS" secondAttribute="centerY" constant="30" id="oQN-kU-6xk"/>
                 <constraint firstItem="0ct-uW-Fmw" firstAttribute="leading" secondItem="Ns2-kX-CcM" secondAttribute="leading" id="rP7-oG-DWt"/>
             </constraints>
             <connections>
                 <outlet property="iconView" destination="0Bn-AO-gFd" id="hxT-DE-IJq"/>
+                <outlet property="loginBtn" destination="kRl-BI-hAG" id="Ywc-Mx-rXf"/>
+                <outlet property="registerBtn" destination="YO3-Vq-Fwv" id="OkX-A1-QmO"/>
                 <outlet property="rotationView" destination="tov-KC-icS" id="Hhw-KL-Jd9"/>
                 <outlet property="tipLabel" destination="E7a-Re-yeU" id="iH1-8Q-CXy"/>
             </connections>
