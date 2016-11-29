@@ -14,7 +14,9 @@ class homeTableViewController: BaseViewController {
 
     // lazy load titleBtn
     fileprivate lazy var titleBtn : titleButton = titleButton()
-    fileprivate lazy var popoverAnimator = PopoverAnimator()
+    fileprivate lazy var popoverAnimator : PopoverAnimator = PopoverAnimator {[weak self] (presented) -> () in
+        self?.titleBtn.isSelected = presented
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +56,6 @@ extension homeTableViewController{
     @objc fileprivate func tileBtnClick(titleBtn: titleButton){
         
         
-        titleBtn.isSelected = !titleBtn.isSelected
         
         // create popViewController
        let popVc = PopoverViewController()

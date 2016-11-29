@@ -10,7 +10,12 @@ import UIKit
 
 class PopoverAnimator: NSObject {
     var isPresented = false
-
+    
+    var callBack : ((_ presented : Bool) -> ())?
+    
+    init(callBack :  @escaping ( _ presented : Bool) -> ()) {
+        self.callBack = callBack
+    }
 }
 
 //UIViewControllerTransitioningDelegate 转场动画代理
@@ -27,11 +32,13 @@ extension PopoverAnimator : UIViewControllerTransitioningDelegate{
     //自定义弹出动画
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         isPresented = true
+        callBack!(isPresented)
         return self
     }
     //自定义消失动画
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         isPresented = false
+        callBack!(isPresented)
         return self
     }
     
