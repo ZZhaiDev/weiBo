@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08F29A76C25568B04C823092 /* Pods_weiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11AD0D8F5CF08EDA46901A8 /* Pods_weiBo.framework */; };
 		380187A71DADD00500A1F8B4 /* null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380187A61DADD00500A1F8B4 /* null.storyboard */; };
 		384966951DE6A8F7004DF1A6 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384966931DE6A8F7004DF1A6 /* PopoverViewController.swift */; };
 		384966961DE6A8F7004DF1A6 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 384966941DE6A8F7004DF1A6 /* PopoverViewController.xib */; };
@@ -85,6 +86,9 @@
 		387243F21D9E306D00905184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38FE64DD1DB02D3E009226C5 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		38FE64DF1DB02D53009226C5 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
+		821D0105D16E1A5FCB966924 /* Pods-weiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-weiBo/Pods-weiBo.release.xcconfig"; sourceTree = "<group>"; };
+		A11AD0D8F5CF08EDA46901A8 /* Pods_weiBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weiBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53C07A2AB492EA6C215BCFF /* Pods-weiBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weiBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weiBo/Pods-weiBo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08F29A76C25568B04C823092 /* Pods_weiBo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +164,8 @@
 				387243E41D9E306D00905184 /* weiBoTests */,
 				387243EF1D9E306D00905184 /* weiBoUITests */,
 				387243CE1D9E306D00905184 /* Products */,
+				55CEABBE8771E17C97F9DA2D /* Pods */,
+				A792DA572FA1D624272D1B6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,6 +270,23 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		55CEABBE8771E17C97F9DA2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D53C07A2AB492EA6C215BCFF /* Pods-weiBo.debug.xcconfig */,
+				821D0105D16E1A5FCB966924 /* Pods-weiBo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A792DA572FA1D624272D1B6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A11AD0D8F5CF08EDA46901A8 /* Pods_weiBo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -270,9 +294,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 387243F51D9E306D00905184 /* Build configuration list for PBXNativeTarget "weiBo" */;
 			buildPhases = (
+				58F81F302667732FAB3F438D /* [CP] Check Pods Manifest.lock */,
 				387243C91D9E306C00905184 /* Sources */,
 				387243CA1D9E306C00905184 /* Frameworks */,
 				387243CB1D9E306C00905184 /* Resources */,
+				DD822BA5643852FCB6BDE6E9 /* [CP] Embed Pods Frameworks */,
+				C1EEAC7F9ECC782A08A51096 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -401,6 +428,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58F81F302667732FAB3F438D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1EEAC7F9ECC782A08A51096 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weiBo/Pods-weiBo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD822BA5643852FCB6BDE6E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weiBo/Pods-weiBo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		387243C91D9E306C00905184 /* Sources */ = {
@@ -588,6 +663,7 @@
 		};
 		387243F61D9E306D00905184 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53C07A2AB492EA6C215BCFF /* Pods-weiBo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -604,6 +680,7 @@
 		};
 		387243F71D9E306D00905184 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821D0105D16E1A5FCB966924 /* Pods-weiBo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
