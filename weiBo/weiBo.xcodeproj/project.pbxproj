@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		08F29A76C25568B04C823092 /* Pods_weiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11AD0D8F5CF08EDA46901A8 /* Pods_weiBo.framework */; };
 		380187A71DADD00500A1F8B4 /* null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380187A61DADD00500A1F8B4 /* null.storyboard */; };
+		383F651D1DEEC68900CA5206 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F651C1DEEC68900CA5206 /* NetworkTools.swift */; };
 		384966951DE6A8F7004DF1A6 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384966931DE6A8F7004DF1A6 /* PopoverViewController.swift */; };
 		384966961DE6A8F7004DF1A6 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 384966941DE6A8F7004DF1A6 /* PopoverViewController.xib */; };
 		384966981DE6B4C8004DF1A6 /* ZJPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384966971DE6B4C8004DF1A6 /* ZJPresentationController.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		380187A61DADD00500A1F8B4 /* null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = null.storyboard; path = ../../null.storyboard; sourceTree = "<group>"; };
+		383F651C1DEEC68900CA5206 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		384966931DE6A8F7004DF1A6 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		384966941DE6A8F7004DF1A6 /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		384966971DE6B4C8004DF1A6 /* ZJPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJPresentationController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			children = (
 				3853FAF81DAF13D6004867AE /* Category */,
 				384B45011DE4293B00DDB73B /* titleButton.swift */,
+				383F651C1DEEC68900CA5206 /* NetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 			files = (
 				385FA5A01D9F007800093C37 /* profileTableViewController.swift in Sources */,
 				384966981DE6B4C8004DF1A6 /* ZJPresentationController.swift in Sources */,
+				383F651D1DEEC68900CA5206 /* NetworkTools.swift in Sources */,
 				3853FAFA1DAF1402004867AE /* UIButton-Extension.swift in Sources */,
 				387243D11D9E306D00905184 /* AppDelegate.swift in Sources */,
 				384B45021DE4293B00DDB73B /* titleButton.swift in Sources */,
