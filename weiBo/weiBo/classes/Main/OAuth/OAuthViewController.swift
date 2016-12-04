@@ -6,6 +6,9 @@
 //  Copyright © 2016年 zijia. All rights reserved.
 //
 
+
+//  used javascript to auto fill in the account and password info, ..... got the appkey, appsecret, redirecturi, from API, and stored in the common.swift file....  used webViewDelegate to get web address and intercept  the "code" and accessToken, used to request datas from server.
+
 import UIKit
 import SVProgressHUD
 
