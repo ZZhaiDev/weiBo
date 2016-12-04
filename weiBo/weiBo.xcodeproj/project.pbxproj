@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		08F29A76C25568B04C823092 /* Pods_weiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11AD0D8F5CF08EDA46901A8 /* Pods_weiBo.framework */; };
+		380121A11DF3E466000D216D /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3801219F1DF3E466000D216D /* OAuthViewController.swift */; };
+		380121A21DF3E466000D216D /* OAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380121A01DF3E466000D216D /* OAuthViewController.xib */; };
+		380121A41DF3EF07000D216D /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380121A31DF3EF07000D216D /* common.swift */; };
 		380187A71DADD00500A1F8B4 /* null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380187A61DADD00500A1F8B4 /* null.storyboard */; };
 		383F651D1DEEC68900CA5206 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F651C1DEEC68900CA5206 /* NetworkTools.swift */; };
 		384966951DE6A8F7004DF1A6 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384966931DE6A8F7004DF1A6 /* PopoverViewController.swift */; };
@@ -55,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3801219F1DF3E466000D216D /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		380121A01DF3E466000D216D /* OAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuthViewController.xib; sourceTree = "<group>"; };
+		380121A31DF3EF07000D216D /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		380187A61DADD00500A1F8B4 /* null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = null.storyboard; path = ../../null.storyboard; sourceTree = "<group>"; };
 		383F651C1DEEC68900CA5206 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		384966931DE6A8F7004DF1A6 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3801219E1DF3E440000D216D /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				380121A01DF3E466000D216D /* OAuthViewController.xib */,
+				3801219F1DF3E466000D216D /* OAuthViewController.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 		384966921DE6A8A7004DF1A6 /* UIPopover */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +160,7 @@
 			children = (
 				3853FAF91DAF1402004867AE /* UIButton-Extension.swift */,
 				384B44FF1DE4254C00DDB73B /* UIBarButtonItem-extention.swift */,
+				380121A31DF3EF07000D216D /* common.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -248,6 +264,7 @@
 		3891D8541D9E41B000159569 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3801219E1DF3E440000D216D /* OAuth */,
 				3853FAFB1DAF452F004867AE /* visitor */,
 				380187A61DADD00500A1F8B4 /* null.storyboard */,
 				385FA5971D9EFF6600093C37 /* mainViewController.swift */,
@@ -409,6 +426,7 @@
 				384B9B281DA5E779001A246D /* Profile.storyboard in Resources */,
 				384966961DE6A8F7004DF1A6 /* PopoverViewController.xib in Resources */,
 				384B9B201DA5E719001A246D /* Message.storyboard in Resources */,
+				380121A21DF3E466000D216D /* OAuthViewController.xib in Resources */,
 				38FE64E01DB02D53009226C5 /* VisitorView.xib in Resources */,
 				387243D61D9E306D00905184 /* Main.storyboard in Resources */,
 				384B9B1E1DA5E6F1001A246D /* Home.storyboard in Resources */,
@@ -489,6 +507,7 @@
 				384966981DE6B4C8004DF1A6 /* ZJPresentationController.swift in Sources */,
 				383F651D1DEEC68900CA5206 /* NetworkTools.swift in Sources */,
 				3853FAFA1DAF1402004867AE /* UIButton-Extension.swift in Sources */,
+				380121A11DF3E466000D216D /* OAuthViewController.swift in Sources */,
 				387243D11D9E306D00905184 /* AppDelegate.swift in Sources */,
 				384B45021DE4293B00DDB73B /* titleButton.swift in Sources */,
 				384966951DE6A8F7004DF1A6 /* PopoverViewController.swift in Sources */,
@@ -499,6 +518,7 @@
 				3853FAFD1DAF46C5004867AE /* BaseViewController.swift in Sources */,
 				384B45001DE4254C00DDB73B /* UIBarButtonItem-extention.swift in Sources */,
 				385FA59E1D9F007000093C37 /* discoverTableViewController.swift in Sources */,
+				380121A41DF3EF07000D216D /* common.swift in Sources */,
 				385FA59A1D9F005700093C37 /* homeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

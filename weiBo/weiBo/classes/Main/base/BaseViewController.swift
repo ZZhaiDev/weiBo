@@ -14,7 +14,7 @@ class BaseViewController: UITableViewController {
     lazy var visitorView: VisitorView = VisitorView.visitorView()
 
     // 定义变量
-    var isLogin : Bool = true
+    var isLogin : Bool = false
     
     override func loadView() {
         isLogin ? super.loadView() : setUpVisitorView()
@@ -50,6 +50,8 @@ extension BaseViewController{
     }
     
     @objc fileprivate func logInBtnClick(){
-        print("logInBtnClick")
+        let oauthVc = OAuthViewController()
+        let naviVc = UINavigationController(rootViewController: oauthVc)
+        present(naviVc, animated: true, completion: nil)
     }
 }

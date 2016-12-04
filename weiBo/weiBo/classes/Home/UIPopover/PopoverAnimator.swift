@@ -13,8 +13,8 @@ class PopoverAnimator: NSObject {
     
     var callBack : ((_ presented : Bool) -> ())?
     
-    init(callBack :  @escaping ( _ presented : Bool) -> ()) {
-        self.callBack = callBack
+    init(callBack1 :  @escaping ( _ presented : Bool) -> ()) {
+        self.callBack = callBack1
     }
 }
 
