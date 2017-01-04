@@ -130,9 +130,17 @@ extension OAuthViewController{
             print(error)
             return
         }
+        print(result)
+        // get the result
+        guard let accountDict = result else{
+            print("no data")
+            return
+        }
+        
+        let account = UserAccount(dict: accountDict)
         
         // get the result
-        print(result)
+        print(account)
     
         }
     }

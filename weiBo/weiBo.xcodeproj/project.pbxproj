@@ -25,6 +25,7 @@
 		384B9B281DA5E779001A246D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B9B261DA5E779001A246D /* Profile.storyboard */; };
 		3853FAFA1DAF1402004867AE /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853FAF91DAF1402004867AE /* UIButton-Extension.swift */; };
 		3853FAFD1DAF46C5004867AE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853FAFC1DAF46C5004867AE /* BaseViewController.swift */; };
+		385B316A1E1C6E4B00422551 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385B31691E1C6E4B00422551 /* UserAccount.swift */; };
 		385FA5981D9EFF6600093C37 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA5971D9EFF6600093C37 /* mainViewController.swift */; };
 		385FA59A1D9F005700093C37 /* homeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA5991D9F005700093C37 /* homeTableViewController.swift */; };
 		385FA59C1D9F006500093C37 /* messageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA59B1D9F006500093C37 /* messageTableViewController.swift */; };
@@ -75,6 +76,7 @@
 		384B9B271DA5E779001A246D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		3853FAF91DAF1402004867AE /* UIButton-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
 		3853FAFC1DAF46C5004867AE /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		385B31691E1C6E4B00422551 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		385FA5971D9EFF6600093C37 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		385FA5991D9F005700093C37 /* homeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeTableViewController.swift; sourceTree = "<group>"; };
 		385FA59B1D9F006500093C37 /* messageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageTableViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				380121A01DF3E466000D216D /* OAuthViewController.xib */,
 				3801219F1DF3E466000D216D /* OAuthViewController.swift */,
+				385B31691E1C6E4B00422551 /* UserAccount.swift */,
 			);
 			path = OAuth;
 			sourceTree = "<group>";
@@ -264,10 +267,10 @@
 		3891D8541D9E41B000159569 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				385FA5971D9EFF6600093C37 /* mainViewController.swift */,
 				3801219E1DF3E440000D216D /* OAuth */,
 				3853FAFB1DAF452F004867AE /* visitor */,
 				380187A61DADD00500A1F8B4 /* null.storyboard */,
-				385FA5971D9EFF6600093C37 /* mainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			files = (
 				385FA5A01D9F007800093C37 /* profileTableViewController.swift in Sources */,
 				384966981DE6B4C8004DF1A6 /* ZJPresentationController.swift in Sources */,
+				385B316A1E1C6E4B00422551 /* UserAccount.swift in Sources */,
 				383F651D1DEEC68900CA5206 /* NetworkTools.swift in Sources */,
 				3853FAFA1DAF1402004867AE /* UIButton-Extension.swift in Sources */,
 				380121A11DF3E466000D216D /* OAuthViewController.swift in Sources */,
