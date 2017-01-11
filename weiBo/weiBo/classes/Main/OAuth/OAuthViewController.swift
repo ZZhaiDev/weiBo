@@ -125,23 +125,59 @@ extension OAuthViewController{
         
        NetworkTools.shareInstance.loadAccessToken(code: code) { (result, error) in
         
-        // if its error, return
+        //1, if its error, return
         if error != nil{
             print(error)
             return
         }
-        print(result)
-        // get the result
+     
+        //2, get the result
         guard let accountDict = result else{
             print("no data")
             return
         }
         
+        //3, 字典转模型 convert NSDictionary to custom object
         let account = UserAccount(dict: accountDict)
         
-        // get the result
-        print(account)
+        //4, 请求用户信息
+        self.loadUserInfo(account: account)
     
+        
+        // override description.
+       // print(account)
+    
+        }
+    }
+    
+    /// 请求用户信息
+    fileprivate func loadUserInfo(account : UserAccount){
+        
+        //1, 获取access_token
+        guard let accessToken = account.access_token else{
+            return
+        }
+        //2, 获取uid
+        guard let uid = account.uid else{
+            return
+        }
+        
+        //3, 发送网络请求
+        NetworkTools.shareInstance.loadUserInfo(access_token : accessToken , uid: uid) { (result, errors) in
+            
+            if errors != nil {
+                print(errors)
+                return
+            }
+            
+            guard let userInfoDict = result else{
+                return
+            }
+            
+            account.screen_name = userInfoDict["screen_name"] as! String?
+            account.avatar_large = userInfoDict["avatar_large"] as! String?
+            
+            print(account)
         }
     }
 }

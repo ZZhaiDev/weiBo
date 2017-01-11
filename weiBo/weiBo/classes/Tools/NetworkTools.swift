@@ -70,3 +70,24 @@ extension NetworkTools{
         
     }
 }
+
+// MARK:- 请求用户信息 retrieve user info
+extension NetworkTools{
+    func loadUserInfo(access_token : String, uid : String, finished : @escaping (_ result : [String : AnyObject]?, _ error : NSError?) -> ()){
+        
+        //1, urlString
+        let urlString = "https://api.weibo.com/2/users/show.json"
+        //2, parameters
+        let parameters = ["access_token" : access_token, "uid" : uid]
+        
+        //3, send request
+        request(methodType: .GET, urlString: urlString, parameter: parameters as [String : AnyObject]) { (result, error) in
+            finished(result as! [String : AnyObject]?, error)
+        }
+    }
+
+}
+
+
+
+
