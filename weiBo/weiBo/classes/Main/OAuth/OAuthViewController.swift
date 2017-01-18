@@ -173,11 +173,19 @@ extension OAuthViewController{
             guard let userInfoDict = result else{
                 return
             }
-            
+            // 储存昵称，头像地址
             account.screen_name = userInfoDict["screen_name"] as! String?
             account.avatar_large = userInfoDict["avatar_large"] as! String?
             
-            print(account)
+            // 将account保存对象
+            // 获取沙盒路径
+            var accountPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+            accountPath = (accountPath as NSString).appendingPathComponent("account.plist")
+            // 保存对象
+            NSKeyedArchiver.archiveRootObject(account, toFile: accountPath)
+            
+            
+            
         }
     }
 }

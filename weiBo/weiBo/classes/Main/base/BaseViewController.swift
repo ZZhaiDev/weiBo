@@ -17,12 +17,31 @@ class BaseViewController: UITableViewController {
     var isLogin : Bool = false
     
     override func loadView() {
+        
+        // 1.从沙盒中读取中归档的信息
+        // 1.1.获取沙盒路径
+        var accountPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        accountPath = (accountPath as NSString).appendingPathComponent("accout.plist")
+        
+        // 1.2.读取信息
+        let account = NSKeyedUnarchiver.unarchiveObject(withFile: accountPath) as? UserAccount
+        if let account = account {
+            
+            // 1.3.取出过期日期 : 当前日期
+            if let expiresDate = account.expires_date {
+                isLogin = expiresDate.compare(Date()) == ComparisonResult.orderedDescending
+            }
+        }
+        
+        // 判断要加载哪一个View
+        
+        
         isLogin ? super.loadView() : setUpVisitorView()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         setUpNavigationItem()
      
     }

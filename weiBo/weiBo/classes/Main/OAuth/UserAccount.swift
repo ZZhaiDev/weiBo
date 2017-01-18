@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserAccount: NSObject {
+class UserAccount: NSObject,NSCoding {
     
     // MARK:- 属性
     ///oauth AccessToken
@@ -49,5 +49,25 @@ class UserAccount: NSObject {
     override var description: String{
         return dictionaryWithValues(forKeys: ["access_token", "expires_date", "uid", "screen_name", "avatar_large"]).description
     }
+    
+    // MARK:- 归档&解档 archive
+    //解档
+    required init?(coder aDecoder: NSCoder) {
+        access_token = aDecoder.decodeObject(forKey: "access_token") as? String
+        uid = aDecoder.decodeObject(forKey: "uid") as? String
+        expires_date = aDecoder.decodeObject(forKey: "expires_date") as? NSDate
+        avatar_large = aDecoder.decodeObject(forKey: "avatar_large") as? String
+        screen_name = aDecoder.decodeObject(forKey: "screen_name") as? String
+    }
+    // 归档方法
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(access_token, forKey: "access_token")
+        aCoder.encode(uid, forKey: "uid")
+        aCoder.encode(expires_date, forKey: "expires_date")
+        aCoder.encode(avatar_large, forKey: "avatar_large")
+        aCoder.encode(screen_name, forKey: "screen_name")
+    }
+    
+   
 
 }
