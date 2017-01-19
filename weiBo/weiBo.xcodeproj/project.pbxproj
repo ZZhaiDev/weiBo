@@ -13,6 +13,8 @@
 		380121A41DF3EF07000D216D /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380121A31DF3EF07000D216D /* common.swift */; };
 		380187A71DADD00500A1F8B4 /* null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380187A61DADD00500A1F8B4 /* null.storyboard */; };
 		383F651D1DEEC68900CA5206 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F651C1DEEC68900CA5206 /* NetworkTools.swift */; };
+		3845AE3D1E30252500026E6B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3845AE3B1E30252500026E6B /* WelcomeViewController.swift */; };
+		3845AE3E1E30252500026E6B /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3845AE3C1E30252500026E6B /* WelcomeViewController.xib */; };
 		384966951DE6A8F7004DF1A6 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384966931DE6A8F7004DF1A6 /* PopoverViewController.swift */; };
 		384966961DE6A8F7004DF1A6 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 384966941DE6A8F7004DF1A6 /* PopoverViewController.xib */; };
 		384966981DE6B4C8004DF1A6 /* ZJPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384966971DE6B4C8004DF1A6 /* ZJPresentationController.swift */; };
@@ -65,6 +67,8 @@
 		380121A31DF3EF07000D216D /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		380187A61DADD00500A1F8B4 /* null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = null.storyboard; path = ../../null.storyboard; sourceTree = "<group>"; };
 		383F651C1DEEC68900CA5206 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		3845AE3B1E30252500026E6B /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = weiBo/classes/Main/WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		3845AE3C1E30252500026E6B /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WelcomeViewController.xib; path = weiBo/classes/Main/WelcomeViewController.xib; sourceTree = SOURCE_ROOT; };
 		384966931DE6A8F7004DF1A6 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		384966941DE6A8F7004DF1A6 /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		384966971DE6B4C8004DF1A6 /* ZJPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJPresentationController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,15 @@
 				386791B41E2F42A900B7A740 /* UserAccountViewModel.swift */,
 			);
 			path = OAuth;
+			sourceTree = "<group>";
+		};
+		3845AE3F1E30253D00026E6B /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				3845AE3B1E30252500026E6B /* WelcomeViewController.swift */,
+				3845AE3C1E30252500026E6B /* WelcomeViewController.xib */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		384966921DE6A8A7004DF1A6 /* UIPopover */ = {
@@ -270,6 +283,7 @@
 		3891D8541D9E41B000159569 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3845AE3F1E30253D00026E6B /* Welcome */,
 				385FA5971D9EFF6600093C37 /* mainViewController.swift */,
 				3801219E1DF3E440000D216D /* OAuth */,
 				3853FAFB1DAF452F004867AE /* visitor */,
@@ -431,6 +445,7 @@
 				387243D81D9E306D00905184 /* Assets.xcassets in Resources */,
 				384B9B281DA5E779001A246D /* Profile.storyboard in Resources */,
 				384966961DE6A8F7004DF1A6 /* PopoverViewController.xib in Resources */,
+				3845AE3E1E30252500026E6B /* WelcomeViewController.xib in Resources */,
 				384B9B201DA5E719001A246D /* Message.storyboard in Resources */,
 				380121A21DF3E466000D216D /* OAuthViewController.xib in Resources */,
 				38FE64E01DB02D53009226C5 /* VisitorView.xib in Resources */,
@@ -510,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				385FA5A01D9F007800093C37 /* profileTableViewController.swift in Sources */,
+				3845AE3D1E30252500026E6B /* WelcomeViewController.swift in Sources */,
 				384966981DE6B4C8004DF1A6 /* ZJPresentationController.swift in Sources */,
 				385B316A1E1C6E4B00422551 /* UserAccount.swift in Sources */,
 				383F651D1DEEC68900CA5206 /* NetworkTools.swift in Sources */,
