@@ -22,6 +22,9 @@ class homeTableViewController: BaseViewController {
         super.viewDidLoad()
         
         // setting when it is not login
+        
+      
+        
         visitorView.addRotationAnim()
         if !isLogin{
             return
@@ -29,6 +32,9 @@ class homeTableViewController: BaseViewController {
         
         //set content of navigationBar
         setNavigationBar()
+        
+        // 3,请求数据
+        loadStatuses()
     }
 
    
@@ -73,6 +79,32 @@ extension homeTableViewController{
             
         
         
+    }
+}
+
+// MARK:- 请求数据
+
+extension homeTableViewController{
+    fileprivate func loadStatuses(){
+        
+      
+        NetworkTools.shareInstance.loadStatuses { (result, error) in
+            // 1,错误校验
+            if error != nil{
+                print(error)
+                return
+            }
+            
+            // 2,获取可选类型中的数据
+            guard let resultDict = result else{
+                return
+            }
+            
+            // 3,遍历微博对应字典
+            for statusesDict in resultDict{
+                print(statusesDict)
+            }
+        }
     }
 }
 

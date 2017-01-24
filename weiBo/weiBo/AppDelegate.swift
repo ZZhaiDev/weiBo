@@ -12,6 +12,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var defaultController : UIViewController? {
+        let isLogin = UserAccountViewModel.shareInstance.isLogin
+        return isLogin ? WelcomeViewController() : UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -23,12 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor.orange
         UINavigationBar.appearance().tintColor  = UIColor.orange
      print(NSHomeDirectory())
-//
-//        
-//        
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        window?.rootViewController = mainViewController()
-//        window?.makeKeyAndVisible()
+
+        
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = defaultController
+        window?.makeKeyAndVisible()
 
         
 

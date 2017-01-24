@@ -88,6 +88,32 @@ extension NetworkTools{
 
 }
 
+// MARK:- 请求首页数据
+extension NetworkTools{
+    func loadStatuses(finished : @escaping (_ result : [[String : AnyObject]]?, _ error : NSError?) -> ()){
+        // 1, 获取请求string
+        let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"
+        
+        // 2, 获取请求参数
+        let parameters = ["access_token" : (UserAccountViewModel.shareInstance.account?.access_token)!]
+        
+        // 3, 发送网络请求
+        request(methodType: .GET, urlString: urlString, parameter: parameters as [String : AnyObject]) { (result, error) in
+           
+            // 1, 获取字典数据
+            guard let resultDict = result else{
+                finished(nil, error)
+                return
+            }
+            
+            
+            // 2,将数组数据回掉给外界控制器(数据太多，很多没必要只需传statuses即可)
+            finished(resultDict["statuses"] as? [[String : AnyObject]], error)
+            
+        }
+    }
+}
+
 
 
 
