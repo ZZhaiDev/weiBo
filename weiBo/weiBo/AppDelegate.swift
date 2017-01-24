@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UITabBar.appearance().tintColor = UIColor.orange
         UINavigationBar.appearance().tintColor  = UIColor.orange
+     print(NSHomeDirectory())
 //
 //        
 //        

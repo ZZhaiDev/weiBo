@@ -147,8 +147,8 @@
 		3845AE3F1E30253D00026E6B /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				3845AE3B1E30252500026E6B /* WelcomeViewController.swift */,
 				3845AE3C1E30252500026E6B /* WelcomeViewController.xib */,
+				3845AE3B1E30252500026E6B /* WelcomeViewController.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";

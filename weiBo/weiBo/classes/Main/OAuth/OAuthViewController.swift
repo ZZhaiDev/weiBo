@@ -65,7 +65,7 @@ extension OAuthViewController{
     // 自动填充账号密码。。。
     @objc fileprivate func autoFillIn(){
         // 1.书写js代码 : javascript / java --> 雷锋和雷峰塔
-        let jsCode = "document.getElementById('userId').value='18510060862';document.getElementById('passwd').value='gjw18510060862';"
+        let jsCode = "document.getElementById('userId').value='18510060862';document.getElementById('passwd').value='weibo521';"
         
         // 2.执行js代码
         webView.stringByEvaluatingJavaScript(from: jsCode)
@@ -164,26 +164,33 @@ extension OAuthViewController{
         
         //3, 发送网络请求
         NetworkTools.shareInstance.loadUserInfo(access_token : accessToken , uid: uid) { (result, errors) in
-            
+            // 1.错误校验
             if errors != nil {
                 print(errors)
                 return
             }
             
-            guard let userInfoDict = result else{
+            // 2.拿到用户信息的结果
+            guard let userInfoDict = result else {
                 return
             }
-            // 储存昵称，头像地址
-            account.screen_name = userInfoDict["screen_name"] as! String?
-            account.avatar_large = userInfoDict["avatar_large"] as! String?
             
-            // 将account保存对象
-            // 获取沙盒路径
-            var accountPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
-            accountPath = (accountPath as NSString).appendingPathComponent("account.plist")
-            // 保存对象
-            NSKeyedArchiver.archiveRootObject(account, toFile: accountPath)
+            // 3.从字典中取出昵称和用户头像地址
+            account.screen_name = userInfoDict["screen_name"] as? String
+            account.avatar_large = userInfoDict["avatar_large"] as? String
             
+            // 4.将account对象保存
+            NSKeyedArchiver.archiveRootObject(account, toFile: UserAccountViewModel.shareInstance.accountPath)
+            
+            /**
+            这里要想设置头像必须要手动赋值一下， 因为程序刚启动时在BaseViewController里边，shareInstance被创建，进入UserAccountViewModel.init()方法，但是沙盒里边还没有任何东西，所以shareInstance为nil，然后执行“4.将account对象保存”，沙盒里有东西了但是shareInstance不会再去执行UserAccountViewModel.init()方法，以为是单利，所以在此处要手动赋值
+            */
+            // 5. 赋值，显示启动头像
+            UserAccountViewModel.shareInstance.account = account
+            // 6.推出当前控制器
+           self.dismiss(animated: false, completion: {
+            UIApplication.shared.keyWindow?.rootViewController = WelcomeViewController()
+           })
             
             
         }
