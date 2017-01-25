@@ -35,6 +35,7 @@
 		385FA59E1D9F007000093C37 /* discoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA59D1D9F007000093C37 /* discoverTableViewController.swift */; };
 		385FA5A01D9F007800093C37 /* profileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FA59F1D9F007800093C37 /* profileTableViewController.swift */; };
 		38606EF31E3887490041CCF4 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38606EF21E3887490041CCF4 /* NSDate-Extension.swift */; };
+		38606EF51E3893D60041CCF4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38606EF41E3893D60041CCF4 /* User.swift */; };
 		386791B51E2F42A900B7A740 /* UserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386791B41E2F42A900B7A740 /* UserAccountViewModel.swift */; };
 		387243D11D9E306D00905184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387243D01D9E306D00905184 /* AppDelegate.swift */; };
 		387243D61D9E306D00905184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387243D41D9E306D00905184 /* Main.storyboard */; };
@@ -91,6 +92,7 @@
 		385FA59D1D9F007000093C37 /* discoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = discoverTableViewController.swift; sourceTree = "<group>"; };
 		385FA59F1D9F007800093C37 /* profileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileTableViewController.swift; sourceTree = "<group>"; };
 		38606EF21E3887490041CCF4 /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		38606EF41E3893D60041CCF4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		386791B41E2F42A900B7A740 /* UserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountViewModel.swift; sourceTree = "<group>"; };
 		387243CD1D9E306D00905184 /* weiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		387243D01D9E306D00905184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				384964F31E38234B00766CE3 /* Statuses.swift */,
+				38606EF41E3893D60041CCF4 /* User.swift */,
 			);
 			path = HomeModel;
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 				385FA59E1D9F007000093C37 /* discoverTableViewController.swift in Sources */,
 				380121A41DF3EF07000D216D /* common.swift in Sources */,
 				385FA59A1D9F005700093C37 /* homeTableViewController.swift in Sources */,
+				38606EF51E3893D60041CCF4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,12 +43,19 @@ class Statuses: NSObject {
     // MARK:- 属性处理
     var sourceText : String?
     var createAtText : String?
+    var user : User?
     
     // MARK:- 自定义构造函数
     init(dict : [String : AnyObject]) {
         super.init()
         
         setValuesForKeys(dict)
+        
+        // 将用户字典转成用户模型
+        if let userDict = dict["user"]{
+            
+            user = User.init(dict: userDict as! [String : AnyObject])
+        }
         
     }
     

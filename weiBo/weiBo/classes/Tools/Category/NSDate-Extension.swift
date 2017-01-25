@@ -14,7 +14,7 @@ extension NSDate {
         let fmt = DateFormatter()
         //"EEE MM dd HH:mm:ss Z yyyy" 月份MM一定大写，分钟mm一定小写，其他无所谓
         fmt.dateFormat = "EEE MM dd HH:mm:ss Z yyyy"
-        fmt.locale = Locale(identifier: "en")
+//        fmt.locale = Locale(identifier: "en")
         
         // 2.将字符串时间,转成NSDate类型
         guard let createDate = fmt.date(from: createAtStr) else {
@@ -30,17 +30,17 @@ extension NSDate {
         // 5.对时间间隔处理
         // 5.1.显示刚刚
         if interval < 60 {
-            return "刚刚"
+            return "just now"
         }
         
         // 5.2.59分钟前
         if interval < 60 * 60 {
-            return "\(interval / 60)分钟前"
+            return "\(interval / 60) mins ago"
         }
         
         // 5.3.11小时前
         if interval < 60 * 60 * 24 {
-            return "\(interval / (60 * 60))小时前"
+            return "\(interval / (60 * 60))hours ago"
         }
         
         // 5.4.创建日历对象
@@ -48,7 +48,7 @@ extension NSDate {
         
         // 5.5.处理昨天数据: 昨天 12:23
         if calendar.isDateInYesterday(createDate) {
-            fmt.dateFormat = "昨天 HH:mm"
+            fmt.dateFormat = "yesterday HH:mm"
             let timeStr = fmt.string(from: createDate)
             return timeStr
         }
