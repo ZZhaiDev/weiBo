@@ -18,6 +18,9 @@ class homeTableViewController: BaseViewController {
         self?.titleBtn.isSelected = presented
     }
     
+    //创建数组，存储数据
+    fileprivate lazy var statuses : [Statuses] = [Statuses]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -102,9 +105,33 @@ extension homeTableViewController{
             
             // 3,遍历微博对应字典
             for statusesDict in resultDict{
-                print(statusesDict)
+                let status = Statuses.init(dict: statusesDict)
+                self.statuses.append(status)
             }
+            
+            
+            // 4, 刷新表格
+            self.tableView.reloadData()
         }
+    }
+}
+
+// MARK:- tableView的数据源方法
+extension homeTableViewController{
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return statuses.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // 1,创建cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell")
+        
+        // 2,给cell设置数据
+        let status = statuses[indexPath.row]
+        cell?.textLabel?.text = status.text
+        
+        
+        return cell!
     }
 }
 

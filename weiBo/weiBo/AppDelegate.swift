@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor.orange
         UINavigationBar.appearance().tintColor  = UIColor.orange
      print(NSHomeDirectory())
+    print(UserAccountViewModel.shareInstance.account?.access_token)
 
         
         
