@@ -13,6 +13,7 @@
 		380121A41DF3EF07000D216D /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380121A31DF3EF07000D216D /* common.swift */; };
 		380187A71DADD00500A1F8B4 /* null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380187A61DADD00500A1F8B4 /* null.storyboard */; };
 		383EF0651E39B4DB00E293A7 /* StatusesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383EF0641E39B4DB00E293A7 /* StatusesViewModel.swift */; };
+		383EF0671E39C53200E293A7 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383EF0661E39C53200E293A7 /* HomeViewCell.swift */; };
 		383F651D1DEEC68900CA5206 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F651C1DEEC68900CA5206 /* NetworkTools.swift */; };
 		3845AE3D1E30252500026E6B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3845AE3B1E30252500026E6B /* WelcomeViewController.swift */; };
 		3845AE3E1E30252500026E6B /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3845AE3C1E30252500026E6B /* WelcomeViewController.xib */; };
@@ -71,6 +72,7 @@
 		380121A31DF3EF07000D216D /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		380187A61DADD00500A1F8B4 /* null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = null.storyboard; path = ../../null.storyboard; sourceTree = "<group>"; };
 		383EF0641E39B4DB00E293A7 /* StatusesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusesViewModel.swift; sourceTree = "<group>"; };
+		383EF0661E39C53200E293A7 /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		383F651C1DEEC68900CA5206 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		3845AE3B1E30252500026E6B /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = weiBo/classes/Main/WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		3845AE3C1E30252500026E6B /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WelcomeViewController.xib; path = weiBo/classes/Main/WelcomeViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -296,6 +298,7 @@
 				384966921DE6A8A7004DF1A6 /* UIPopover */,
 				384B9B1C1DA5E6F1001A246D /* Home.storyboard */,
 				385FA5991D9F005700093C37 /* homeTableViewController.swift */,
+				383EF0661E39C53200E293A7 /* HomeViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -561,6 +564,7 @@
 				38FE64DE1DB02D3E009226C5 /* VisitorView.swift in Sources */,
 				3849E7481DEC23C5001BE9FC /* PopoverAnimator.swift in Sources */,
 				385FA59C1D9F006500093C37 /* messageTableViewController.swift in Sources */,
+				383EF0671E39C53200E293A7 /* HomeViewCell.swift in Sources */,
 				386791B51E2F42A900B7A740 /* UserAccountViewModel.swift in Sources */,
 				3853FAFD1DAF46C5004867AE /* BaseViewController.swift in Sources */,
 				384B45001DE4254C00DDB73B /* UIBarButtonItem-extention.swift in Sources */,

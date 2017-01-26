@@ -19,15 +19,12 @@ class homeTableViewController: BaseViewController {
     }
     
     //创建数组，存储数据
-    fileprivate lazy var statuses : [Statuses] = [Statuses]()
+    fileprivate lazy var viewModels : [StatusesViewModel] = [StatusesViewModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // setting when it is not login
-        
-      
-        
         visitorView.addRotationAnim()
         if !isLogin{
             return
@@ -105,12 +102,14 @@ extension homeTableViewController{
             
             // 3,遍历微博对应字典
             for statusesDict in resultDict{
-                let status = Statuses.init(dict: statusesDict)
-                self.statuses.append(status)
+                let status = Statuses(dict: statusesDict)
+                let viewModel = StatusesViewModel(status: status)
+                self.viewModels.append(viewModel)
             }
             
             
             // 4, 刷新表格
+            print("reloadData")
             self.tableView.reloadData()
         }
     }
@@ -119,19 +118,19 @@ extension homeTableViewController{
 // MARK:- tableView的数据源方法
 extension homeTableViewController{
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return statuses.count
+        return viewModels.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 1,创建cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell") as! HomeViewCell
         
         // 2,给cell设置数据
-        let status = statuses[indexPath.row]
-        cell?.textLabel?.text = status.text
+        cell.viewModel = viewModels[indexPath.row]
+     
         
         
-        return cell!
+        return cell
     }
 }
 
