@@ -12,6 +12,7 @@
 		380121A21DF3E466000D216D /* OAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380121A01DF3E466000D216D /* OAuthViewController.xib */; };
 		380121A41DF3EF07000D216D /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380121A31DF3EF07000D216D /* common.swift */; };
 		380187A71DADD00500A1F8B4 /* null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380187A61DADD00500A1F8B4 /* null.storyboard */; };
+		383EF0651E39B4DB00E293A7 /* StatusesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383EF0641E39B4DB00E293A7 /* StatusesViewModel.swift */; };
 		383F651D1DEEC68900CA5206 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383F651C1DEEC68900CA5206 /* NetworkTools.swift */; };
 		3845AE3D1E30252500026E6B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3845AE3B1E30252500026E6B /* WelcomeViewController.swift */; };
 		3845AE3E1E30252500026E6B /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3845AE3C1E30252500026E6B /* WelcomeViewController.xib */; };
@@ -69,6 +70,7 @@
 		380121A01DF3E466000D216D /* OAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuthViewController.xib; sourceTree = "<group>"; };
 		380121A31DF3EF07000D216D /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		380187A61DADD00500A1F8B4 /* null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = null.storyboard; path = ../../null.storyboard; sourceTree = "<group>"; };
+		383EF0641E39B4DB00E293A7 /* StatusesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusesViewModel.swift; sourceTree = "<group>"; };
 		383F651C1DEEC68900CA5206 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		3845AE3B1E30252500026E6B /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = weiBo/classes/Main/WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		3845AE3C1E30252500026E6B /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WelcomeViewController.xib; path = weiBo/classes/Main/WelcomeViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -164,6 +166,7 @@
 			children = (
 				384964F31E38234B00766CE3 /* Statuses.swift */,
 				38606EF41E3893D60041CCF4 /* User.swift */,
+				383EF0641E39B4DB00E293A7 /* StatusesViewModel.swift */,
 			);
 			path = HomeModel;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				384964F41E38234B00766CE3 /* Statuses.swift in Sources */,
 				387243D11D9E306D00905184 /* AppDelegate.swift in Sources */,
 				384B45021DE4293B00DDB73B /* titleButton.swift in Sources */,
+				383EF0651E39B4DB00E293A7 /* StatusesViewModel.swift in Sources */,
 				384966951DE6A8F7004DF1A6 /* PopoverViewController.swift in Sources */,
 				385FA5981D9EFF6600093C37 /* mainViewController.swift in Sources */,
 				38606EF31E3887490041CCF4 /* NSDate-Extension.swift in Sources */,
