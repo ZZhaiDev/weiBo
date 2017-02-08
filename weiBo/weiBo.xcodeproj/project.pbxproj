@@ -22,6 +22,7 @@
 		384966961DE6A8F7004DF1A6 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 384966941DE6A8F7004DF1A6 /* PopoverViewController.xib */; };
 		384966981DE6B4C8004DF1A6 /* ZJPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384966971DE6B4C8004DF1A6 /* ZJPresentationController.swift */; };
 		3849E7481DEC23C5001BE9FC /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3849E7471DEC23C5001BE9FC /* PopoverAnimator.swift */; };
+		384B35281E4AE62300D35513 /* PicCollectionVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B35271E4AE62300D35513 /* PicCollectionVIew.swift */; };
 		384B45001DE4254C00DDB73B /* UIBarButtonItem-extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B44FF1DE4254C00DDB73B /* UIBarButtonItem-extention.swift */; };
 		384B45021DE4293B00DDB73B /* titleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B45011DE4293B00DDB73B /* titleButton.swift */; };
 		384B9B1E1DA5E6F1001A246D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B9B1C1DA5E6F1001A246D /* Home.storyboard */; };
@@ -81,6 +82,7 @@
 		384966941DE6A8F7004DF1A6 /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		384966971DE6B4C8004DF1A6 /* ZJPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJPresentationController.swift; sourceTree = "<group>"; };
 		3849E7471DEC23C5001BE9FC /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
+		384B35271E4AE62300D35513 /* PicCollectionVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicCollectionVIew.swift; sourceTree = "<group>"; };
 		384B44FF1DE4254C00DDB73B /* UIBarButtonItem-extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-extention.swift"; sourceTree = "<group>"; };
 		384B45011DE4293B00DDB73B /* titleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = titleButton.swift; sourceTree = "<group>"; };
 		384B9B1D1DA5E6F1001A246D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				384B9B1C1DA5E6F1001A246D /* Home.storyboard */,
 				385FA5991D9F005700093C37 /* homeTableViewController.swift */,
 				383EF0661E39C53200E293A7 /* HomeViewCell.swift */,
+				384B35271E4AE62300D35513 /* PicCollectionVIew.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 				385FA59C1D9F006500093C37 /* messageTableViewController.swift in Sources */,
 				383EF0671E39C53200E293A7 /* HomeViewCell.swift in Sources */,
 				386791B51E2F42A900B7A740 /* UserAccountViewModel.swift in Sources */,
+				384B35281E4AE62300D35513 /* PicCollectionVIew.swift in Sources */,
 				3853FAFD1DAF46C5004867AE /* BaseViewController.swift in Sources */,
 				384B45001DE4254C00DDB73B /* UIBarButtonItem-extention.swift in Sources */,
 				385FA59E1D9F007000093C37 /* discoverTableViewController.swift in Sources */,

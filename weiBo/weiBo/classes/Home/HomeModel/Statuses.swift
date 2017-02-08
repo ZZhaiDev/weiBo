@@ -15,9 +15,8 @@ class Statuses: NSObject {
     var source : String?           //微博来源
     var text : String?          //微博的正文
     var mid : Int = 0           //微博的ID
-    
-
     var user : User?
+    var pic_urls : [[String : String]]? // 微博的配图
     
     // MARK:- 自定义构造函数
     init(dict : [String : AnyObject]) {
